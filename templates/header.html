@@ -5,20 +5,38 @@
 		<title>{{.Title}}</title>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+        
 		<style type="text/css">
-			body {padding-bottom: 70px;}
-			.content {margin:10px;}
+			body {
+                padding-bottom: 70px;
+            }
+			.content {
+                margin:10px;
+            }
+            .navbar-custom {
+                color: #FFFFFF;
+                background-color: #CC3333;
+            }
+            li a .my-nav-color {
+                color: lightgoldenrodyellow;
+                font-weight: bold;
+            }
+            li a.my-nav-color:hover {
+                color: skyblue;
+                font-weight: bolder;
+            }
 		</style>
 	</head>
 	<body>
-	    <nav class="navbar navbar-default" role="navigation">
+	    <nav class="navbar navbar-default navbar-custom" role="navigation">
 	      <div class="navbar-header">
-	        <a class="navbar-brand" href="/">Go App</a>
+	        <a class="navbar-brand" href="/">Go MAN, Go</a>
 	      </div>
-	      <div class="collapse navbar-collapse navbar-ex1-collapse">  
+	      <div class="collapse navbar-collapse navbar-ex1-collapse navbar-custom">  
 	        <ul class="nav navbar-nav">
-	        	<li><a href="/">Main</a></li>
-	        	<li><a href="/about">About</a></li>
+	        	<li class="my-nav-color"><a href="/">Main</a></li>
+                <li class="my-nav-color"><a href="/boo">Boo</a></li>
+	        	<li class="my-nav-color"><a href="/books">Books</a></li>
 	        </ul>
 	      </div>
 	    </nav>
